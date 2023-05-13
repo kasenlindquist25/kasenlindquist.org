@@ -91,6 +91,7 @@
             text-decoration: none;
         }
 
+<<<<<<< Updated upstream
         * {
             box-sizing: border-box
         }
@@ -205,6 +206,28 @@
             .text {
                 font-size: 11px
             }
+=======
+        /* CSS styles for the slideshow */
+        .slideshow {
+            width: 400px;
+            height: 266.8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            right: 0px;
+        }
+
+        .slide.active {
+            opacity: 1;
+>>>>>>> Stashed changes
         }
     </style>
 </head>
@@ -247,7 +270,7 @@
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love being a front end web developer</em></p>
+        <p class="w3-center"><em>I love being a web developer</em></p>
         <p>Hi, my name is Kasen Lindquist and I am a Web Developer. I live in Utah in the United States of America and I
             am learning how to be a web
             developer at Davis Catalyst Center. I built this website so I can show you what I've done, who I've worked
@@ -258,6 +281,7 @@
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
                 <p><b><i class="fa fa-user w3-margin-right"></i>Kasen Mikah Lindquist</b></p><br>
+<<<<<<< Updated upstream
                 <div class="slideshow-container">
 
                     <div class="mySlides fade">
@@ -290,7 +314,36 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
                 <br>
+=======
+                <div class="slideshow">
+                    <img class="slide active" src="./Images_Index/Lindquist-185.jpg" alt="Slide 1">
+                    <img class="slide" src="./Images_Index/Kasen-Lindquist-Logo-1.png" alt="Slide 2">
+                    <img class="slide" src="./Images_Index/Lindquist-19.jpg" alt="Slide 3">
+                </div>
+                <script>
+                    // JavaScript code for the slideshow
+                    var slides = document.getElementsByClassName('slide');
+                    var currentSlide = 0;
+>>>>>>> Stashed changes
 
+                    function showSlide(n) {
+                        // Hide all slides
+                        for (var i = 0; i < slides.length; i++) {
+                            slides[i].classList.remove('active');
+                        }
+
+                        // Show the specified slide
+                        slides[n].classList.add('active');
+                    }
+
+                    function nextSlide() {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        showSlide(currentSlide);
+                    }
+
+                    // Automatically advance the slideshow every 3 seconds
+                    setInterval(nextSlide, 3000);
+                </script>
             </div>
 
             <!-- Hide this text on small devices -->
