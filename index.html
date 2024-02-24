@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a5186959b1.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
     <style>
         body,
         h1,
@@ -43,7 +43,7 @@
 
         /* First image (Logo. Full height) */
         .bgimg-1 {
-            background-image: url('https://img.rawpixel.com/private/static/images/website/2022-05/ns10554-image-kwvwqxh9.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=16a559d801881a21bcd5f148e6ddaf88');
+            background-image: url('./Images_Index/RynLandscape_Images.jpg');
             min-height: 62%;
         }
 
@@ -119,7 +119,7 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
-            <a style="content:;" class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
@@ -152,13 +152,12 @@
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love being a web developer</em></p>
-        <p>Hi, my name is Kasen Lindquist and I am a Web Developer. I live in Utah in the United States of America and I
-            am learning how to be a web
-            developer at Davis Catalyst Center. I built this website so I can show you what I've done, who I've worked
-            for and to show off some
-            of my skills. If your looking for a website than go to my contact page to contact me or the Davis Catalyst
-            Center.
+        <p class="w3-center"><em>I love being a <span id="fadeEl">web developer</span></em></p>
+        <p>Hi, my name is Kasen Lindquist and I am a Web Developer and construction worker. I live in Utah in the United
+            States of America and Iam learning how to be a web developer at Davis Catalyst Center and now I have a
+            internship at Wadman Corporation through construction at the Davis Catalyst Center. I built this website
+            so I can show you what I've done, who I've worked for and to show off some of my skills. If your looking for
+            a website than go to my contact page to contact me or the Davis Catalyst Center.
         </p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
@@ -196,34 +195,31 @@
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
                 <p>Welcome to my website. I am very happy you have visited my website. Some of my hobbies are star
-                    gazing, video games, paranormal
-                    investigating, baseball, building websites, and my own personal studies. I am 16 years old and have
-                    lived in Utah my entire life.
-                    I love going to the Davis Catalyst Center and enjoy learning more and more about Web Development. I
-                    am excited to help you and learn
-                    how to do my job better. Warning, this website may have programming issues due to me trying new
-                    things and testing my skills. If you
+                    gazing, video games, building websites, and my own personal studies. I am 17 years old and have
+                    lived in Utah my entire life. I love going to the Davis Catalyst Center and enjoy learning more and
+                    more about Web Development. I am excited to help you and learn how to do my job better. Warning,
+                    this website may have programming issues due to me trying new things and testing my skills. If you
                     run into any problems just send me an email and let me know.</p>
             </div>
         </div>
         <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>War of Thunder</p>
+        <p class="w3-wide"><i class="fa-solid fa-gamepad"></i>PUBG</p>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
         </div>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>HTML</p>
+        <p class="w3-wide"><i class="fa-brands fa-html5"></i>HTML</p>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
         </div>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>CSS</p>
+        <p class="w3-wide"><i class="fa-solid fa-file-code"></i>CSS</p>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
         </div>
-        <p class="w3-wide"><i class="fa fa-photo"></i>Power Point</p>
+        <p class="w3-wide"><i class="fa-solid fa-file-powerpoint"></i>Power Point</p>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
         </div>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>JavaScript</p>
+        <p class="w3-wide"><i class="fa-brands fa-js"></i>JavaScript</p>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
         </div>
@@ -275,11 +271,19 @@
             </div>
 
             <div class="w3-col m3">
-                <img src="./TravelersMotel/Images_TravelersMotel/MotelLogo_Image.png" style="width:100%" onclick="onClick(this)"
+                <img src="./Images_Index/MotelLogo_Image.png" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity"
-                    alt="This is a website I am quite proud of for the Travelers Motel in Kanab, Utah. Fantastic place and fantastic locations go ahead and take a look at what I can do and maybe even consider taking a nice vaction there.">
+                    alt="This is a website I am quite proud of for the Travelers Motel in Kanab, Utah. Fantastic place and fantastic locations go ahead and take a look at what I can do.">
                 <a href="https://travelersmotelutah.com/" target="_blank">
                     <h4>Travelers Motel<h4><a>
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./Images_Index/abbystephens_Images.jpg" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity"
+                    alt="This is a website I am working on for a motivational speaker. On this project I am using WordPress, which is new and fun for me. Consider taking a look and see the work I have done.">
+                <a href="https://www.abbystephens.net/" target="_blank">
+                    <h4>Abby Stephens<h4><a>
             </div>
 
             <div class="w3-col m3">
