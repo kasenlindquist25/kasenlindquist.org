@@ -43,7 +43,7 @@
 
         /* First image (Logo. Full height) */
         .bgimg-1 {
-            background-image: url('./Images_Index/RynLandscape(1)_Images.jpg');
+            background-image: url('./Images_Internship/InsideBuilding_ImagesInternship.jpg');
             min-height: 62%;
         }
 
@@ -111,6 +111,19 @@
         .slide.active {
             opacity: 1;
         }
+
+        /*first two images*/
+        .sidebyside {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imageBox {
+            width: 49.5%;
+            border: 1px solid #ccc;
+            padding: 5px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 
@@ -145,10 +158,39 @@
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
             <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span
-                    class="w3-hide-small">Kasen Lindquist</span></span>
+                    class="w3-hide-small">Wadman Corporation Internship</span></span>
         </div>
     </div>
 
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">MY EXPERIENCE</h3>
+        <p>I started out by just going to the Davis Catalyst Center's construction pathway, which only one semester of.
+            That gave me the opportunity to work at Wadman as an intern. At first, I was hesitant about it, but then I
+            happily accepted it. Not only did this provide me a way to get a construction job easier, but it was also
+            going to give me great working experience for the future. I was and am excited about the internship; I am
+            enjoying every second of it even though parts involve cleaning, which, if you know me well, you know I hate
+            cleaning. At the Davis Catalyst Center, I was constantly building tiny houses, working with my
+            co-workers/classmates, and having fun. I think with the internship, I was expecting more of a formal work
+            environment, which definitely happened, and I also expected to do more building, which barely happened. I
+            was warned about this by my construction teacher, Jeremiah Allen, and my parents, both saying that I would
+            have to start from the ground up. Which I did, starting with sweeping and water removal.
+        </p>
+        <div class="sidebyside">
+            <div class="imageBox">
+                <img style="width: 100%;" src="./Images_Internship/WaterBuckets_ImagesInternship.jpg"
+                    alt="Image of two buckets catching water falling from ceiling.">
+            </div>
+            <div class="imageBox">
+                <img style="width: 100%;" src="./Images_Internship/BroomCleanUp_ImagesInternship.jpg"
+                    alt="Image of broom next to swept up pile of dirt and trash.">
+            </div>
+        </div>
+        <p>At some point I started working with Carson Lowe, the carpenter and fellow co-worker from Wadman. We work
+            together to make sure the contractors are doing their thing and to make sure that everything is in order. I
+            got to do a little carpentry and build box for something on the roof.
+        </p>
+        <img style="width: 50%; float: right;flex-wrap: wrap;" src="./Images_Internship/CarpentrySelfie_ImagesInternship.jpg" alt="Kasen next to the tools and wood for carpentry"></img>
+    </div>
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off backgroundStretch">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the
             top</a>
