@@ -1,3 +1,4 @@
+/*text switcher*/  
 let text = [ "web developer", "construction worker"];
 let counter = 0;
 setInterval(change, 1000);
