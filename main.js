@@ -1,7 +1,7 @@
 /*text switcher*/  
 let text = [ "web developer", "construction worker"];
 let counter = 0;
-setInterval(change, 1000);
+setInterval(change, 700);
 
 function change() {
     document.getElementById("fadeEl").innerHTML = text[counter];
