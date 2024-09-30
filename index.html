@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Kasen Lindquist</title>
+    <link rel="icon" type="image/x-icon" href="./Images_Index/Kasen-Lindquist-Logo-1.png">
     <style>
 
     </style>
 </head>
 
 <body>
-    <section>
-        <header>
-            <img style="width: 30%; margin-top: 9%; margin-left: 2%;" src="./Images_Index/Kasen-Lindquist-Logo-1.png"
-                alt="">
-            <nav>
-                <hr style="margin-bottom: 20px;">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <header class="header">
+            <h1>Kasen Lindquist</h1>
+            <p>I'm a Web Developer</p>
         </header>
-    </section>
+        <div class="slideshow">
+            <div class="slides fade">
+                <img src="./Images_Index/Lindquist-185.jpg" alt="Image 1">
+            </div>
+            <div class="slides fade">
+                <img src="./Images_Index/Lindquist-19.jpg" alt="Image 2">
+            </div>
+            <div class="slides fade">
+                <img src="./Images_Index/Kasen&Koryn.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for the slideshow
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
 </body>
 
 </html>
