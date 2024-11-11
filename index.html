@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,92 +11,56 @@
         /* Add any additional styling here */
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
             <h1>Kasen Lindquist</h1>
-            <p>I'm a Web Developer</p>
+            <p>I'm a Website Developer</p>
         </header>
         <div class="slideshow">
             <div class="slides fade">
-                <img src="./Images_Index/Lindquist-185.jpg" alt="Image 1" style="height: 809.33;">
+                <img src="./Images_Index/Lindquist-185.jpg" alt="A photo of Kasen Lindquist" style="height: 809.33;">
             </div>
             <div class="slides fade">
-                <img src="./Images_Index/Lindquist-19.jpg" alt="Image 2">
+                <img src="./Images_Index/Lindquist-19.jpg" alt="Kasen and his family.">
             </div>
             <div class="slides fade">
-                <img src="./Images_Index/Kasen&Koryn.jpg" alt="Image 3" style="height: 100%;">
+                <img src="./Images_Index/Kasen&Koryn.jpg" alt="Kasen and his girlfriend, Koryn." style="height: 100%;">
             </div>
         </div>
     </div>
+    <br>
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <br>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <h3>HTML</h3>
-            </div>
-            <div class="skill-card">
-                <h3>CSS</h3>
-            </div>
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-            </div>
-            <div class="skill-card">
-                <h3>React</h3>
-            </div>
-            <div class="skill-card">
-                <h3>Angular</h3>
-            </div>
-            <div class="skill-card">
-                <h3>jQuery</h3>
-            </div>
-            <div class="skill-card">
-                <h3>Git</h3>
-            </div>
-            <div class="skill-card">
-                <h3>VSCode</h3>
-            </div>
-            <div class="skill-card">
-                <h3>UI/UX Design</h3>
-            </div>
-            <div class="skill-card">
-                <h3>SQL</h3>
-            </div>
-        </div>
-    </section>    
-    <section id="hobbies">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Hiking</li>
-            <li>Photography</li>
-            <li>Cooking</li>
-            <li>Community Volunteering</li>
-            <li>Side Projects: Web Apps, Games</li>
-        </ul>
-    </section>
-    <script>
-        // JavaScript for the slideshow
-        let slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            let slides = document.getElementsByClassName("slides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+        <script>
+            // JavaScript for the slideshow
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let slides = document.getElementsByClassName("slides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
             }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
+        </script>
 </body>
+
 </html>
