@@ -45,25 +45,51 @@ nav ul li a:hover {
     color: #ddd;
 }
 
-section {
+#about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#left-column,
+#right-column {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+
+#right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#personal {
     padding: 20px;
     margin: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #333;
-    margin-top: 0;
+#cta {
+    text-align: center;
+    margin: 40px 0;
 }
 
-a {
+#cta a {
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-a:hover {
+#cta a:hover {
     color: #0056b3;
 }
