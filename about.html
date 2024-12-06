@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -24,7 +24,6 @@
         </nav>
         <h1>About Me</h1>
     </header>
-<<<<<<< Updated upstream
     <main id="about-content">
         <section id="left-column">
             <div id="introduction">
@@ -51,6 +50,68 @@
                     successful web developer.
                 </p>
             </div>
+            <div>
+                <h1 id="TechStack-Header">My Tech Stack</h1>
+                <div class="tech-category">
+                    <h2>Code Skills</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item"
+                            data-tooltip="HTML: The standard markup language for creating web pages."><span>HTML</span>
+                        </div>
+                        <div class="tech-item"
+                            data-tooltip="CSS: Styling language used for describing the look and formatting of documents written in HTML.">
+                            <span>CSS</span></div>
+                        <div class="tech-item"
+                            data-tooltip="JavaScript: Programming language that allows you to implement complex features on web pages.">
+                            <span>JavaScript</span></div>
+                        <div class="tech-item"
+                            data-tooltip="PHP: Server-side scripting language designed for web development.">
+                            <span>PHP</span></div>
+                        <div class="tech-item" data-tooltip="React: JavaScript library for building user interfaces.">
+                            <span>React</span></div>
+                        <div class="tech-item"
+                            data-tooltip="Flexbox: CSS layout model for arranging elements in a responsive manner.">
+                            <span>Flexbox</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h2>Tools</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item"
+                            data-tooltip="Git/GitHub: Version control system and hosting service for Git repositories.">
+                            <span>Git/GitHub</span></div>
+                        <div class="tech-item" data-tooltip="Visual Studio Code: Source-code editor made by Microsoft.">
+                            <span>Visual Studio Code</span></div>
+                        <div class="tech-item"
+                            data-tooltip="Cyberduck: Open-source client for FTP and SFTP, WebDAV, and cloud storage.">
+                            <span>Cyberduck</span></div>
+                        <div class="tech-item" data-tooltip="Copilot: AI-powered code completion tool.">
+                            <span>Copilot</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h2>Design Resources</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item" data-tooltip="Font Awesome: Icon toolkit for scalable vector graphics.">
+                            <span>Font Awesome</span></div>
+                        <div class="tech-item" data-tooltip="Google Fonts: Free library of web fonts."><span>Google
+                                Fonts</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h2>Platforms</h2>
+                    <div class="tech-stack">
+                        <div class="tech-item"
+                            data-tooltip="Shopify: E-commerce platform for online stores and retail point-of-sale systems.">
+                            <span>Shopify</span></div>
+                        <div class="tech-item" data-tooltip="Go Daddy: Web hosting and domain registration service.">
+                            <span>Go Daddy</span></div>
+                        <div class="tech-item" data-tooltip="Squarespace: Website building and hosting service.">
+                            <span>Squarespace</span></div>
+                    </div>
+                </div>
+                <div class="tooltip" id="tooltip"></div>
+                <script> const techItems = document.querySelectorAll('.tech-item'); const tooltip = document.getElementById('tooltip'); techItems.forEach(item => { item.addEventListener('mouseover', (event) => { tooltip.textContent = event.target.getAttribute('data-tooltip'); tooltip.style.left = `${event.pageX + 10}px`; tooltip.style.top = `${event.pageY + 10}px`; tooltip.style.display = 'block'; }); item.addEventListener('mouseout', () => { tooltip.style.display = 'none'; }); }); </script>
         </section>
         <section id="right-column">
             <div id="experience">
@@ -66,7 +127,7 @@
                     A
                     country singer that I started working for the beginning of this school year.</p>
             </div>
-            <div id="about-image"> <img src="./Images_Index/SouthJordanSelfie_AboutHTML.jpg"
+            <div id="about-image"> <img src="./Images_Index/Lineberry-03815.jpg"
                     alt="Image of Kasen laying on the red rocks in Saint George, Utah"> </div>
         </section>
     </main>
@@ -92,7 +153,8 @@
             <br>
             One of my other passions is Dungeons & Dragons (D&D). Whether I'm crafting intricate storylines as a Dungeon
             Master or embarking on epic quests as a player, D&D allows me to exercise my creativity and strategic
-            thinking in a fun and collaborative environment. I'm currently working on making my own complex campaign, it is called the Shattered realm
+            thinking in a fun and collaborative environment. I'm currently working on making my own complex campaign, it
+            is called the Shattered realm
             <br>
             <br>
             I come from a close-knit family of six, including my parents, my brother Aidan, and my two sisters, Caitlyn
@@ -102,70 +164,74 @@
             When it comes to movies, two of my current favorites are 13 Hours in Bengazi and Midway. I
             love these films for their gripping storytelling, intense action, and historical significance.
         </p>
-=======
 
-    <section id="introduction">
-        <h2>Welcome!</h2>
-        <p>Hi, I'm Kasen Lindquist, a dedicated web developer based in Utah. I currently go to the Davis Catalyst Center
-            and Syracuse High School. My journey in web development began in Junior High when I took my first Website
-            Development class. Initially, I joined the class to try something cool and hopefully snag an easy A, but I
-            quickly discovered a passion for creating and coding websites.
+        <section id="introduction">
+            <h2>Welcome!</h2>
+            <p>Hi, I'm Kasen Lindquist, a dedicated web developer based in Utah. I currently go to the Davis Catalyst
+                Center
+                and Syracuse High School. My journey in web development began in Junior High when I took my first
+                Website
+                Development class. Initially, I joined the class to try something cool and hopefully snag an easy A, but
+                I
+                quickly discovered a passion for creating and coding websites.
 
-            Although my formal education in web development was somewhat limited, I eagerly sought out resources to
-            expand my knowledge. I learned extensively from platforms like W3Schools, YouTube, and other online
-            communities. This self-driven learning helped me build a solid foundation in web development.
+                Although my formal education in web development was somewhat limited, I eagerly sought out resources to
+                expand my knowledge. I learned extensively from platforms like W3Schools, YouTube, and other online
+                communities. This self-driven learning helped me build a solid foundation in web development.
 
-            In High School, I discovered the <a href="https://catalyst.davis.k12.ut.us/" target="_blank">Davis Catalyst
-                Center</a>, a
-            unique program that facilitated transportationfor students between their home high schools and specialized
-            courses at the Catalyst Center. I enrolled in their Web Development program during my first semester, which
-            led me to my first real client, the Kanab Travelers Motel. Despite the motel closing shortly after their
-            website went live, the experience was invaluable.
+                In High School, I discovered the <a href="https://catalyst.davis.k12.ut.us/" target="_blank">Davis
+                    Catalyst
+                    Center</a>, a
+                unique program that facilitated transportationfor students between their home high schools and
+                specialized
+                courses at the Catalyst Center. I enrolled in their Web Development program during my first semester,
+                which
+                led me to my first real client, the Kanab Travelers Motel. Despite the motel closing shortly after their
+                website went live, the experience was invaluable.
 
-            Since then, I have completed numerous projects, honing my skills and gaining a wealth of experience. My
-            portfolio now includes diverse projects, each reflecting my growth and commitment to becoming a successful
-            web developer.</p>
-    </section>
+                Since then, I have completed numerous projects, honing my skills and gaining a wealth of experience. My
+                portfolio now includes diverse projects, each reflecting my growth and commitment to becoming a
+                successful
+                web developer.</p>
+        </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <p>Over the years, I've had the opportunity to work on a variety of projects, honing my expertise primarily in
-            web development. Below are some of my notable experiences:
-        </p>
-        <ul>
-            <li><strong>Travelers Motel Website:</strong> Developed a fully functional and aesthetically pleasing
-                website for Travelers Motel, ensuring a seamless user experience. Helping viewers find a comfortable and
-                cheap living space for a adventurous vacation in southern Utah.</li>
-            <li><strong><a href="#internship">Internship at Syracuse Emergency Center for Wadman:</a></strong>
-                Contributed to various projects and gained valuable insights. Also was able to help around in a real
-                construction work enviroment.</li>
-            <li><strong><a href="https://catalyst.davis.k12.ut.us/" target="_blank">Davis Catalyst
-                        Center:</a></strong> A career program based school that I have been taking Web Development and
-                Counstruction</li>
-            <li><strong><a href="houstonmerrill.com" target="_blank"></a>Houston Merrill's Website:</strong> Among my
-                favorite projects, I created a website for Houston
-                Merrill, showcasing my ability to build engaging and user-friendly web platforms. This website is
-                helping spread his different social media accounts and annoucing events and release dates.
-        </ul>
-        <p>I have a passion for trying new things, learning, and experimenting with code. This passion led me to build
-            this website and purchase this domain as a playground for my code. It also serves as a platform to showcase
-            my skills and get my name out there. My portfolio contains more details about my projects and experiences.
-        </p>
-    </section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <p>Over the years, I've had the opportunity to work on a variety of projects, honing my expertise primarily
+                in
+                web development. Below are some of my notable experiences:
+            </p>
+            <ul>
+                <li><strong>Travelers Motel Website:</strong> Developed a fully functional and aesthetically pleasing
+                    website for Travelers Motel, ensuring a seamless user experience. Helping viewers find a comfortable
+                    and
+                    cheap living space for a adventurous vacation in southern Utah.</li>
+                <li><strong><a href="#internship">Internship at Syracuse Emergency Center for Wadman:</a></strong>
+                    Contributed to various projects and gained valuable insights. Also was able to help around in a real
+                    construction work enviroment.</li>
+                <li><strong><a href="https://catalyst.davis.k12.ut.us/" target="_blank">Davis Catalyst
+                            Center:</a></strong> A career program based school that I have been taking Web Development
+                    and
+                    Counstruction</li>
+                <li><strong><a href="houstonmerrill.com" target="_blank"></a>Houston Merrill's Website:</strong> Among
+                    my
+                    favorite projects, I created a website for Houston
+                    Merrill, showcasing my ability to build engaging and user-friendly web platforms. This website is
+                    helping spread his different social media accounts and annoucing events and release dates.
+            </ul>
+            <p>I have a passion for trying new things, learning, and experimenting with code. This passion led me to
+                build
+                this website and purchase this domain as a playground for my code. It also serves as a platform to
+                showcase
+                my skills and get my name out there. My portfolio contains more details about my projects and
+                experiences.
+            </p>
+        </section>
 
-    <section id="personal">
-        <h2>More About Me</h2>
-        <p>When I'm not coding, I enjoy video games, talking with friends, playing the guitar, hanging out with my
-            girlfriend, and I enjoy camping and hiking. I love sitting down and playing PUBG, Enlisted, Assassin's Creed
-            (BLACK FLAG IS THE BEST), Prey, and Red Dead Redemption 2. I also love spending time with my girlfriend on
-            Fortnite, we love exploring different game modes and maps. Every year I go on a backpacking trip with my dad
-            and brother.</p>
->>>>>>> Stashed changes
-    </section>
-    <section id="cta">
-        <h2>Get in Touch</h2>
-        <p>Interested in working together? Feel free to <a href="link-to-your-contact-page">contact me</a> or <a
-                href="link-to-your-portfolio">visit my portfolio</a> to see more of my work.</p>
+        <section id="cta">
+            <h2>Get in Touch</h2>
+            <p>Interested in working together? Feel free to <a href="link-to-your-contact-page">contact me</a> or <a
+                    href="link-to-your-portfolio">visit my portfolio</a> to see more of my work.</p>
 </body>
 
 </html>
