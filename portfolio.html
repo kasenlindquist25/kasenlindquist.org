@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./Images_Portfolio/Website/th copy.png">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="menu" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <nav class="nav" id="navbar"> 
+        <a href="#home">Home</a> 
+        <a href="#about">About</a> 
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my journey through the places I've worked and the projects I've completed.</p>
+        </div>
+    </header>
+    <script> function toggleMenu() { 
+        const menu = document.querySelector('.menu'); 
+        const navbar = document.getElementById('navbar'); 
+        menu.classList.toggle('open'); 
+        navbar.classList.toggle('open'); } 
+    </script>
+
+    <div class="filter-buttons"> <button class="filter-button" onclick="filterProjects('all')">All</button> <button
+            class="filter-button" onclick="filterProjects('web-development')">Web Development</button> <button
+            class="filter-button" onclick="filterProjects('ecommerce')">E-commerce</button> <button
+            class="filter-button" onclick="filterProjects('portfolio-sites')">Portfolio Sites</button> </div>
+    <div class="project-grid" id="projects"> <!-- Project Items -->
+        <div class="project-item" data-category="web-development">
+            <div class="project-title">Davis Catalyst Center - Web Development</div>
+            <div class="project-description">Description of Project 1.</div>
+        </div>
+        <div class="project-item" data-category="ecommerce">
+            <div class="project-title">Davis Catalyst Center - Construction Management </div>
+            <div class="project-description">Description of Project 2.</div>
+        </div>
+        <div class="project-item" data-category="portfolio-sites">
+            <div class="project-title">Houston Merrill</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div> <!-- Add more project items as needed -->
+    </div>
+    <div class="project-grid" id="projects">
+        <div class="project-item" data-category="portfolio-sites">
+            <div class="project-title">Wadman Internship</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div>
+        <div class="project-item" data-category="portfolio-sites">
+            <div class="project-title">Catalyst Cooks</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div>
+        <div class="project-item" data-category="portfolio-sites">
+            <div class="project-title">Deseret Star Playhouse</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div>
+    </div>
+    <script> function filterProjects(category) { const projects = document.querySelectorAll('.project-item'); projects.forEach(project => { if (category === 'all' || project.getAttribute('data-category') === category) { project.style.display = 'block'; } else { project.style.display = 'none'; } }); } </script>
+</body>
+
+</html>

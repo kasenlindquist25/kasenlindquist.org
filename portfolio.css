@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('./Images_Portfolio/Website/HeaderImage_Portfolio.jpg') no-repeat center center/cover;
+    /*Image created by Shelley Lindquist*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+.header-content {
+    position: absolute;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.filter-buttons {
+    margin: 20px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #0073e6;
+    background-color: transparent;
+    color: #0073e6;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.nav a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.nav a:hover {
+    color: #0073e6;
+}
+
+.open .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.open .nav {
+    display: flex;
+}
+
+.open .nav a {
+    opacity: 1;
+}
