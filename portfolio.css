@@ -115,6 +115,10 @@ body {
     z-index: 9;
 }
 
+.nav.open {
+    display: flex;
+}
+
 .nav a {
     color: white;
     font-size: 2em;
@@ -124,8 +128,8 @@ body {
     transition: opacity 0.4s;
 }
 
-.nav a:hover {
-    color: #0073e6;
+.nav.open a {
+    opacity: 1;
 }
 
 .open .bar1 {
@@ -138,12 +142,4 @@ body {
 
 .open .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.open .nav {
-    display: flex;
-}
-
-.open .nav a {
-    opacity: 1;
 }
