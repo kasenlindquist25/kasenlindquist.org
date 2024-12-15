@@ -41,35 +41,49 @@
 
     <div class="filter-buttons"> <button class="filter-button" onclick="filterProjects('all')">All</button> <button
             class="filter-button" onclick="filterProjects('web-development')">Web Development</button> <button
-            class="filter-button" onclick="filterProjects('ecommerce')">E-commerce</button> <button
-            class="filter-button" onclick="filterProjects('portfolio-sites')">Portfolio Sites</button> </div>
+            class="filter-button" onclick="filterProjects('construction')">Construction</button> <button
+            class="filter-button" onclick="filterProjects('jobs')">Other Jobs</button> </div>
     <div class="project-grid" id="projects"> <!-- Project Items -->
         <div class="project-item" data-category="web-development">
             <div class="project-title">Davis Catalyst Center - Web Development</div>
             <div class="project-description">Description of Project 1.</div>
         </div>
-        <div class="project-item" data-category="ecommerce">
+        <div class="project-item" data-category="construction">
             <div class="project-title">Davis Catalyst Center - Construction Management </div>
             <div class="project-description">Description of Project 2.</div>
         </div>
-        <div class="project-item" data-category="portfolio-sites">
+        <div class="project-item" data-category="web-development">
             <div class="project-title">Houston Merrill</div>
             <div class="project-description">Description of Project 3.</div>
         </div> <!-- Add more project items as needed -->
     </div>
     <div class="project-grid" id="projects">
-        <div class="project-item" data-category="portfolio-sites">
+        <div class="project-item" data-category="construction">
             <div class="project-title">Wadman Internship</div>
             <div class="project-description">Description of Project 3.</div>
         </div>
-        <div class="project-item" data-category="portfolio-sites">
+        <div class="project-item" data-category="web-development">
             <div class="project-title">Catalyst Cooks</div>
             <div class="project-description">Description of Project 3.</div>
         </div>
-        <div class="project-item" data-category="portfolio-sites">
+        <div class="project-item" data-category="jobs">
             <div class="project-title">Deseret Star Playhouse</div>
             <div class="project-description">Description of Project 3.</div>
         </div>
+    </div>
+    <div class="project-grid" id="projects">
+        <div class="project-item" data-category="jobs">
+            <div class="project-title">Lagoon</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div>
+        <!--<div class="project-item" data-category="web-development">
+            <div class="project-title">Catalyst Cooks</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div>
+        <div class="project-item" data-category="jobs">
+            <div class="project-title">Deseret Star Playhouse</div>
+            <div class="project-description">Description of Project 3.</div>
+        </div>-->
     </div>
     <script> function filterProjects(category) { const projects = document.querySelectorAll('.project-item'); projects.forEach(project => { if (category === 'all' || project.getAttribute('data-category') === category) { project.style.display = 'block'; } else { project.style.display = 'none'; } }); } </script>
 </body>
