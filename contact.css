@@ -96,7 +96,7 @@ textarea {
     height: 150px;
 }
 
-button {
+#send {
     padding: 15px;
     border: none;
     background-color: #0073e6;
@@ -106,6 +106,12 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 106%;
+}
+
+#back {
+    border-radius: 20px;
+    width: 30px;
+    height: 25px;
 }
 
 button:hover {

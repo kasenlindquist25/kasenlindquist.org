@@ -152,3 +152,8 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
 }
+
+.logo {
+    width: 20%;
+    align-content: left;
+}
