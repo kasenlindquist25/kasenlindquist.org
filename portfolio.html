@@ -35,10 +35,11 @@
     <script> function toggleMenu() { const menu = document.querySelector('.menu'); const navbar = document.getElementById('navbar'); menu.classList.toggle('open'); navbar.classList.toggle('open'); }
     </script>
 
-    <div class="filter-buttons"> <button class="filter-button" onclick="filterProjects('all')">All</button> <button
-            class="filter-button" onclick="filterProjects('web-development')">Web Development</button> <button
-            class="filter-button" onclick="filterProjects('construction')">Construction</button> <button
-            class="filter-button" onclick="filterProjects('jobs')">Other Jobs</button> </div>
+    <div class="filter-buttons"> 
+            <button class="filter-button" onclick="filterProjects('all')">All</button> 
+            <button class="filter-button" onclick="filterProjects('web-development')">Web Development</button> 
+            <button class="filter-button" onclick="filterProjects('construction')">Construction</button> 
+            <button class="filter-button" onclick="filterProjects('jobs')">Other Jobs</button> </div>
     <div class="project-grid" id="projects"> <!-- Project Items -->
         <div class="project-item" data-category="web-development">
             <div class="project-title">Davis Catalyst Center - Web Development</div>
@@ -72,14 +73,14 @@
             <div class="project-title">Lagoon</div>
             <div class="project-description">I worked as an amusment park employee for one season and managed guests and rides.</div>
         </div>
-        <!--<div class="project-item" data-category="web-development">
-            <div class="project-title">Catalyst Cooks</div>
-            <div class="project-description">Description of Project 3.</div>
+        <div class="project-item" data-category="web-development">
+            <div class="project-title"> Abby Stephens</div>
+            <div class="project-description">I built a website for Abby Stephens, who is a motivational speaker.</div>
         </div>
         <div class="project-item" data-category="jobs">
-            <div class="project-title">Deseret Star Playhouse</div>
-            <div class="project-description">Description of Project 3.</div>
-        </div>-->
+            <div class="project-title">Domino's Delivery Driver</div>
+            <div class="project-description">Small part time job as a Domino's Pizza delievery driver.</div>
+        </div>
     </div>
     <script> function filterProjects(category) { const projects = document.querySelectorAll('.project-item'); projects.forEach(project => { if (category === 'all' || project.getAttribute('data-category') === category) { project.style.display = 'block'; } else { project.style.display = 'none'; } }); } </script>
 </body>
