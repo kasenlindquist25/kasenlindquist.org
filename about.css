@@ -9,23 +9,41 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
     position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 10%; /* Maintain aspect ratio */
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.header-content {
+    flex: 1;
+    text-align: center;
 }
 
 header h1 {
     margin: 10px 0 0;
     font-size: 2.5em;
+    margin-right: 240px;
 }
 
 .navbar {
     background-color: #333;
     overflow: hidden;
-    margin: 0 auto;
-    width: fit-content;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 240px;
 }
 
 nav ul {
@@ -34,7 +52,6 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #333;
 }
 
 nav ul li {
@@ -53,6 +70,8 @@ nav ul li a {
 nav ul li a:hover {
     color: #ddd;
 }
+
+
 
 #about-content {
     display: flex;
@@ -151,9 +170,4 @@ nav ul li a:hover {
     font-size: 0.9em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     white-space: nowrap;
-}
-
-.logo {
-    width: 20%;
-    align-content: left;
 }

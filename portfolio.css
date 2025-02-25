@@ -143,3 +143,7 @@ body {
 .open .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+a {
+    text-decoration: none;
+}
