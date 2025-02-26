@@ -50,6 +50,7 @@ body, html {
     background-color: #fafafa;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
 }
 
 .text-content h2 {
@@ -62,10 +63,14 @@ body, html {
     margin-bottom: 20px;
 }
 
+.image-content {
+    width: 50%;
+}
 .image-content img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    float: right;
 }
 
 footer {
