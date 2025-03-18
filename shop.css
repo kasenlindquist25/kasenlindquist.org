@@ -1,0 +1,55 @@
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Increased padding for a larger header */
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+    height: 70px; /* Increased logo size */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Adjusted spacing for a cleaner look */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaeaea; /* Light background for contrast */
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Larger, bold headline */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Smaller, friendly tagline */
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
