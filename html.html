@@ -1,11 +1,12 @@
 <div class="container">
     <div class="text-and-image">
       <img src="https://cdn.shopify.com/s/files/1/0642/5378/8220/files/Houston_Signature.png?v=1741020565" alt="Description of the image">
-      <button class="listen-button" onclick="window.open('https://open.spotify.com/track/4VUwgJaa7JtnbF95S2T1S3?si=dZgAjTljRUmhZhQaBXxpXg', '_blank')">
-        Listen to Houston's Newest Music
-      </button>
     </div>
   </div>
+  
+  <button class="listen-button" onclick="window.open('https://open.spotify.com/track/4VUwgJaa7JtnbF95S2T1S3?si=dZgAjTljRUmhZhQaBXxpXg', '_blank')">
+    Listen to Houston's Newest Music
+  </button>
   
   <style>
   .container {
@@ -48,10 +49,9 @@
   }
   
   .listen-button {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed; /* Fixed position for desktop */
+    bottom: 20px; /* Anchored to viewport bottom */
+    right: 20px; /* Anchored to viewport right */
     padding: 15px 25px;
     background-color: #D3D3D3;
     color: #000;
@@ -62,7 +62,7 @@
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 10;
+    z-index: 15;
   }
   
   /* Mobile view adjustments */
@@ -91,13 +91,13 @@
     }
   
     .listen-button {
-      position: absolute;
-      bottom: -15px; /* Ensures it stays on the gradient */
+      position: absolute; /* Stays on the gradient in mobile */
+      bottom: 500px; /* Adjusted to sit higher above the featured product */
       left: 50%;
       transform: translateX(-50%);
       padding: 10px 10px;
-      font-size: 12px; /* Slightly smaller for mobile view */
-      width: 65%;
+      font-size: 12px;
+      width: 65%; /* Custom width for mobile view */
     }
   }
   </style>
