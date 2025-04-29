@@ -29,40 +29,58 @@
                 <img src="./Images_Ryn/20250415_195318[1].jpg" alt="Kasen and his girlfriend, Koryn.">
             </div>
             <div class="slides fade">
-                <img src="./Images_Portfolio/Website/th copy.png" alt="Kasen's Logo. A bright orange, yellow, and white modern styled letter K." style="width: 90%; padding-left: 20%;">
+                <img src="./Images_Portfolio/Website/th copy.png"
+                    alt="Kasen's Logo. A bright orange, yellow, and white modern styled letter K."
+                    style="width: 90%; padding-left: 20%;">
             </div>
         </div>
     </div>
+    <nav class="hamburger-menu">
+        <div id="menu-btn">☰ Menu</div>
+        <ul id="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./broken.html">Shop</a></li>
+        </ul>
+    </nav>
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./broken.html">Shop</a></li>
         </ul>
     </nav>
-    
-
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
-        <script>
-            // JavaScript for the slideshow
-            let slideIndex = 0;
-            showSlides();
-            function showSlides() {
-                let slides = document.getElementsByClassName("slides");
-                for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) { slideIndex = 1 }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 5000); // Change image every 3 seconds
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        // JavaScript for the slideshow
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-        </script>
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 3 seconds
+        }
+    </script>
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            const menu = document.getElementById("menu-items");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        });
+    </script>
 </body>
 
 </html>
