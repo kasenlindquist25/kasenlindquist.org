@@ -37,7 +37,7 @@ body {
     flex: 2;
     position: relative;
     overflow: hidden;
-    height: 636.8px;
+    height: 800px;
 }
 .slides {
     display: none;
@@ -47,8 +47,9 @@ body {
 }
 .slides img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Maintain aspect ratio and fit within the slide */
+    height: 800px; /* Match slideshow container height */
+    object-fit: cover; /* Ensure images fill the space evenly */
+
 }
 .navbar {
     background-color: #333;
@@ -92,6 +93,10 @@ section {
 .slideshow {
     display: block; /* Ensure slideshow is visible */
 }
+.KLLogo {
+    width: 90%; 
+    padding-left: 20%;
+}
 
 /* Responsive layout for mobile */
 @media screen and (max-width: 768px) {
@@ -108,9 +113,30 @@ section {
     }
 
     .slideshow {
-        display: block; /* Ensure the slideshow is visible */
+        display: block;
         order: 2; /* Place it below the header */
         height: auto; /* Adjust height for mobile view */
+        max-height: 500px; /* Set a reasonable max height */
+        width: 100%; /* Ensure full width */
+        overflow: hidden; /* Prevent clipping */
+    }
+
+    .slides {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-height: 500px; /* Ensures the slideshow isn’t too thin */
+    }
+
+    .slides img {
+        width: 100%;
+        height: 500px; /* Set a uniform height */
+        object-fit: cover; /* Ensures consistent sizing while preventing distortion */
+    }
+
+    .KLLogo {
+        width: 100%; 
+        padding-left: 0%;
     }
 
     .navbar {
