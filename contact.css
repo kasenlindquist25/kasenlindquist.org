@@ -117,3 +117,47 @@ textarea {
 button:hover {
     background-color: #005bb5;
 }
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .left-column, .right-column {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .right-column img {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .text, .testimonials {
+        text-align: center;
+    }
+
+    .social-media a {
+        font-size: 1.8em;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input, textarea {
+        padding: 12px;
+    }
+
+    #send {
+        width: 100%;
+    }
+
+    #back {
+        width: 40px;
+        height: 30px;
+    }
+}

@@ -141,6 +141,7 @@ section {
 
     .navbar {
         display: none; /* Hide desktop navbar in mobile view */
+        border-radius: 100px;
     }
 
     .hamburger-menu {
